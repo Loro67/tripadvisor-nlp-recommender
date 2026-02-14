@@ -1,1 +1,12 @@
 # NLP_reviews
+
+### Corpus : TripAdvisor
+• Main idea : based on my past reviews, how to recommend the
+most similar trips?
+• Hypothesis : similar places/experiences are described with
+similar words
+
+### Input/Output Model
+• Input : a review or set of review on a specific place
+• Output : most similar place
+• Model relies only on reviews and not on other metadatas
