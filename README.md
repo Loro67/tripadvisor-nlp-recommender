@@ -3,6 +3,8 @@
 > Content-based place recommendation using **review text only** — no metadata, no shortcuts.  
 > Built as part of the Information Retrieval & NLP course — ESILV A4 DIA6 (2026).
 
+![Model Comparison](results/model_comparison.png)
+
 ---
 
 ## The Idea
@@ -39,7 +41,21 @@ We evaluate using a **Ranking Error** metric on a 50/50 train/test split of plac
 
 A ranking error of **0** means the top result is already a correct match. An error of **k** means we had to scroll to position k+1 to find a valid match. Lower is better.
 
-Results are broken down **per place type** to surface meaningful differences across categories.
+---
+
+## Results
+
+### TF-IDF Ablation Study
+
+Systematic comparison of vocabulary size, n-gram range, and sublinear TF weighting:
+
+![TF-IDF Ablation](results/tfidf_ablation.png)
+
+### Per-Type Breakdown
+
+L1 error broken down by place type (Hotel, Restaurant, Attraction, Attraction Product):
+
+![Per-Type L1 Breakdown](results/per_type_breakdown.png)
 
 ---
 
@@ -59,6 +75,10 @@ tripadvisor-nlp-recommender/
 ├── notebook.ipynb        # Full pipeline: preprocessing → models → evaluation → demos
 ├── report.pdf            # Written report with methodology, results & analysis
 ├── requirements.txt      # Python dependencies
+├── results/              # Evaluation charts
+│   ├── model_comparison.png
+│   ├── tfidf_ablation.png
+│   └── per_type_breakdown.png
 ├── data/
 │   └── README.md         # Expected data files and format description
 └── README.md
