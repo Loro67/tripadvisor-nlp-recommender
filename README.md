@@ -1,4 +1,4 @@
-# 🗺️ TripAdvisor NLP Recommendation System
+# TripAdvisor NLP Recommendation System
 
 > Content-based place recommendation using **review text only** — no metadata, no shortcuts.  
 > Built as part of the Information Retrieval & NLP course — ESILV A4 DIA6 (2026).
