@@ -51,4 +51,4 @@ Evaluated on a 50/50 train-test split of places, with per-type breakdowns.
 
 ## Authors
 
-Alvaro SERERO & Leo Winter — ESILV A4 DIA6, 2026
+Alvaro Serero & Leo Winter — ESILV A4 DIA6, 2026
